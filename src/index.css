@@ -1,0 +1,31 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;800&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.main-container {
+  @apply w-full px-10 py-10 mx-auto lg:px-20 max-w-7xl;
+}
+
+.danger {
+  @apply w-full mx-auto h-[25px] bg-red-100 text-red-600 rounded flex items-center justify-center;
+}
+.success {
+  @apply w-full mx-auto h-[25px] bg-green-300 text-green-600 rounded flex items-center justify-center;
+}
+
+@font-face {
+  font-family: "Noto Sans", sans-serif;
+  src: url("https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;600;800&display=swap");
+}
+
+body {
+  @apply font-primary;
+  @apply bg-primary;
+}
+
+.input-number {
+  -moz-appearance: textfield;
+  -webkit-appearance: none;
+}
